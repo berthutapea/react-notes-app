@@ -74,15 +74,16 @@ textarea::placeholder {
 
 .note-input__title__closebuton {
   cursor: pointer;
-	color: var(--grey);
-	padding: 0.2rem;
-	position: absolute;
-	top: 0.5rem;
-	right: 1rem;
-	font-size: 1.2rem;
+  color: var(--grey);
+  padding: 0.2rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.2rem;
 }
+
 .note-input__title__closebuton :hover {
- color: #838080;
+  color: #838080;
 }
 
 .note-input__title__note {
@@ -189,11 +190,11 @@ textarea::placeholder {
 
 .note-item__archive-button {
   border-right: 1px solid #aaa;
-  color: #fff263;
+  color: #4acf67;
 }
 
 .note-item__archive-button:hover {
-  color: #c49000;
+  color: #66ff00;
 }
 
 .note-item__delete-button:hover {
@@ -213,7 +214,8 @@ textarea::placeholder {
 
 .note-body__add-note-button {
   border: 1px solid #aaa;
-  color: #fff263;
+  border-radius: 4px;
+  color: #4acf67;
   display: block;
   width: 100%;
   background-color: transparent;
@@ -222,6 +224,10 @@ textarea::placeholder {
   font-family: 'Inter', sans-serif;
   font-weight: bold;
   cursor: pointer;
+}
+
+.note-body__add-note-button:hover {
+  color: #66ff00;
 }
 
 .ReactModal__Overlay {

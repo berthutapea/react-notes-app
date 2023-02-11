@@ -97,8 +97,8 @@ class NotesApp extends React.Component {
                 <AppBody notes={this.state.notes} addNewNote={this.addNewNoteHandler} onDelete={this.onDeleteHandler} onArchive={this.onArchiveHandler} />
                 <Footer />
                 <ToastContainer 
-                    position="bottom-right"
-                    autoClose={3000}
+                    position="top-right"
+                    autoClose={1000}
                     hideProgressBar={false}
                     newestOnTop={false}
                     closeOnClick
