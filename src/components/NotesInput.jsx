@@ -66,9 +66,9 @@ const NotesInput = ({ addNewNote, closeModal }) => {
 
     return (
         <div className="note-input">
-            <h2>New Note</h2>
+            <h2 className="note-input__title__note">New Note</h2>
             <form>
-                <p className="note-input__title__char-limit">Character left: {50 - formData.noteBodyLength}</p>
+                <h3>Title</h3>
                 <input 
                     className="note-input__title" 
                     type="text" 
@@ -78,6 +78,8 @@ const NotesInput = ({ addNewNote, closeModal }) => {
                     value={formData.title} 
                     onChange={onTitleChange} 
                 />
+                <p className="note-input__title__char-limit">Character left: {50 - formData.noteBodyLength}</p>
+                <h3>Notes</h3>
                 <textarea 
                     className="note-input__body" 
                     type="text" 
