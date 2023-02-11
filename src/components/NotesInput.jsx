@@ -24,7 +24,7 @@ const NotesInput = ({ addNewNote, closeModal }) => {
             toast.error('Max length for note body is 50', { toastId: toastId1 });
         }
     }
-    
+
     const onBodyChange = (event) => {
         event.preventDefault();
         setFormData({
@@ -45,7 +45,7 @@ const NotesInput = ({ addNewNote, closeModal }) => {
                 id: +new Date(),
                 title: formData.title,
                 body: formData.noteBody,
-                archived: false, 
+                archived: false,
                 createdAt: new Date(),
             }
             const result = addNewNote(newData);
@@ -69,22 +69,22 @@ const NotesInput = ({ addNewNote, closeModal }) => {
             <h2 className="note-input__title__note">New Note</h2>
             <form>
                 <h3>Title</h3>
-                <input 
-                    className="note-input__title" 
-                    type="text" 
+                <input
+                    className="note-input__title"
+                    type="text"
                     name="title"
-                    placeholder="Title" 
+                    placeholder="Title"
                     required
-                    value={formData.title} 
-                    onChange={onTitleChange} 
+                    value={formData.title}
+                    onChange={onTitleChange}
                 />
                 <p className="note-input__title__char-limit">Character left: {50 - formData.noteBodyLength}</p>
                 <h3>Notes</h3>
-                <textarea 
-                    className="note-input__body" 
-                    type="text" 
+                <textarea
+                    className="note-input__body"
+                    type="text"
                     name="noteBody"
-                    placeholder="Your notes here ..." 
+                    placeholder="Your notes here ..."
                     required
                     value={formData.noteBody}
                     onChange={onBodyChange}
