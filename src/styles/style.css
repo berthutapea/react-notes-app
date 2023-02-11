@@ -72,6 +72,19 @@ textarea::placeholder {
   font-weight: bold;
 }
 
+.note-input__title__closebuton {
+  cursor: pointer;
+	color: var(--grey);
+	padding: 0.2rem;
+	position: absolute;
+	top: 0.5rem;
+	right: 1rem;
+	font-size: 1.2rem;
+}
+.note-input__title__closebuton :hover {
+ color: #838080;
+}
+
 .note-input__title__note {
   justify-content: center;
   display: flex;

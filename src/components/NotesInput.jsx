@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { toast } from 'react-toastify';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 const toastId1 = 'toast-1';
 const toastId2 = 'toast-2';
@@ -66,6 +68,9 @@ const NotesInput = ({ addNewNote, closeModal }) => {
 
     return (
         <div className="note-input">
+            <i className="note-input__title__closebuton" onClick={closeModal}>
+                <FontAwesomeIcon icon={faTimes} />
+            </i>
             <h2 className="note-input__title__note">New Note</h2>
             <form>
                 <h3>Title</h3>
