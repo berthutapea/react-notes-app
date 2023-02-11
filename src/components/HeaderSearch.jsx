@@ -1,20 +1,20 @@
-import React from "react";
+// import React from "react";
 
-const SearchBar = ({ onSearch }) => {
+// const SearchBar = ({ onSearch }) => {
 
-    const onSearchbarChange = (event) => {
-        onSearch(event.target.value);
-    } 
+//     const onSearchbarChange = (event) => {
+//         onSearch(event.target.value);
+//     } 
 
-    return (
-        <div className="note-search">
-            <input 
-                type="text" 
-                placeholder="Search for notes..."
-                onChange={onSearchbarChange}
-            />
-        </div>
-    )
-}
+//     return (
+//         <div className="note-search">
+//             <input 
+//                 type="text" 
+//                 placeholder="Search for notes..."
+//                 onChange={onSearchbarChange}
+//             />
+//         </div>
+//     )
+// }
 
-export default SearchBar;
+// export default SearchBar;
