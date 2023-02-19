@@ -27,20 +27,20 @@ const getInitialData = () => ([
     createdAt: '2022-04-14T04:27:34.572Z',
     archived: false,
   },
-  {
-    id: 5,
-    title: "ESM",
-    body: "ESM (ECMAScript Module) merupakan format modularisasi standar JavaScript.",
-    createdAt: '2022-04-14T04:27:34.572Z',
-    archived: false,
-  },
   // {
-  //   id: 6,
-  //   title: "Module Bundler",
-  //   body: "Dalam konteks pemrograman JavaScript, module bundler merupakan tools yang digunakan untuk menggabungkan seluruh modul JavaScript yang digunakan oleh aplikasi menjadi satu berkas.",
+  //   id: 5,
+  //   title: "ESM",
+  //   body: "ESM (ECMAScript Module) merupakan format modularisasi standar JavaScript.",
   //   createdAt: '2022-04-14T04:27:34.572Z',
   //   archived: false,
   // },
+  {
+    id: 6,
+    title: "Module Bundler",
+    body: "Dalam konteks pemrograman JavaScript, module bundler merupakan tools yang digunakan untuk menggabungkan seluruh modul JavaScript yang digunakan oleh aplikasi menjadi satu berkas.",
+    createdAt: '2022-04-14T04:27:34.572Z',
+    archived: false,
+  },
 ]);
 
 const showFormattedDate = (date) => {
