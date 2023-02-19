@@ -5,7 +5,6 @@ import { getInitialData } from '../utils/data';
 import AppBody from './Body';
 import Header from './Header';
 import Footer from './Footer';
-
 import 'react-toastify/dist/ReactToastify.min.css';
 import autoBind from 'auto-bind';
 
