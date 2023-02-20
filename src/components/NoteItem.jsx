@@ -2,7 +2,7 @@ import React from "react";
 import { showFormattedDate } from "../utils/data";
 
 const NoteItem = ({ note, onDelete, onArchive }) => {
-    // const onDeleteClick = () => onDelete(note.id);
+    const onDeleteClick = () => onDelete(note.id);
     const onArchiveClick = () => onArchive(note.id);
 
     return (
